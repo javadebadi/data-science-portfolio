@@ -8,6 +8,7 @@ Email: javad.ebadi.1990@gmail.com
 
 import os
 from data_engineering import extract
+from data_engineering import transform
 
 # created data directory if not exists
 os.makedirs('data', exist_ok=True)
@@ -16,6 +17,7 @@ os.chdir('data')
 
 def main():
     extract.main()
+    transform.main()
 
 if __name__ == '__main__':
     main()
